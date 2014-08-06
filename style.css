@@ -1,0 +1,446 @@
+/*
+Theme Name: medonline old
+Theme URI:
+Description: Anpassungen des Waipoua Themes
+Author: Thomas N. Burg
+Author URI: http://www.medonline.at/
+Template: waipoua
+Version: 1.0
+Tags: Waipoua Child Theme Medonline Old
+*/
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Navigation fixes, Sebastian Schmid, 22.05.2013
+/*-----------------------------------------------------------------------------------*/
+
+/*#site-nav-wrap { height:60px; }
+body.logged-out #site-nav-close { display:none; }
+*/
+
+/** Fix for symposium tab, added by RM */
+.__wps__dropdown li {
+        min-width: 110px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*     News ticker fix, introduced wrap2 (RM) 
+/*-----------------------------------------------------------------------------------*/
+
+.three-columns #wrap2,
+.three-columns #site-nav-container {
+        max-width:1220px;
+	margin: auto;
+}
+
+.three-columns #wrap {
+  max-width: 100% !important;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Other Styles
+/*-----------------------------------------------------------------------------------*/
+
+/*#sidebar.widget-area{width:320px;}*/
+#branding {padding:20px 20px 40px 0;}
+.wp-cpl-sc-post {
+border: 6px solid #CDCDCD;
+-moz-border-radius: 5px;
+border-radius: 5px;
+/*background-color: #ffffff;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#999999)); /* Safari 4+, Chrome */
+/*background-image: -webkit-linear-gradient(top, #ffffff, #999999); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+/*background-image:    -moz-linear-gradient(top, #ffffff, #999999); /* Firefox 3.6-15 */
+/*background-image:      -o-linear-gradient(top, #ffffff, #999999); /* Opera 11.10-12.00 */
+/*background-image:         linear-gradient(to bottom, #ffffff, #999999); /* Firefox 16+, IE10, Opera 12.50+ */
+}
+.wp-cpl-sc-thumb {
+-moz-border-radius: 3px;
+border-radius: 3px;
+-moz-box-shadow: 3px 3px 3px #CDCDCD;
+-webkit-box-shadow: 3px 3px 3px #CDCDCD;
+box-shadow: 3px 3px 3px #CDCDCD;
+}
+.wp-cpl-sc-meta {background-color: #E6E8FA}
+
+@media screen and (max-width: 1100px) {
+	.wooslider .overlay-natural .slide-excerpt .slide-title {
+		width: 100% !important;
+	}
+	.wooslider .overlay-natural .slide-excerpt {
+		position: relative;
+		width: 100% !important;
+	}
+}
+
+/* 3 column layout option*/
+@media screen and (min-width: 1260px) {
+/* --- Three-Columns Layout Option --- */
+.three-columns #wrap,
+.three-columns #site-nav-container {
+	max-width:1220px;
+}
+.three-columns #content-wrap {
+	width:71.31147540983607%;
+}
+.three-columns #content {
+	width:59.77011494252874%;
+	float:left;
+	margin-right:5.747126436781609%;
+}
+.three-columns #featuredposts {
+	width:34.48275862068966%;
+	float:left;
+	padding-top:0;
+}
+.three-columns #sidebar {
+	width:24.59016393442623%;
+	float:right;
+}
+#featuredposts .post {
+	margin: 0 0 32px;
+	padding: 0;
+}
+}
+
+/*3 cols for IE8*/
+.ie .three-columns #wrap,
+.ie .three-columns #site-nav-container {
+max-width:1220px;
+}
+.ie .three-columns #content-wrap {
+width:71.31147540983607%;
+}
+.ie .three-columns #content {
+width:59.77011494252874%;
+float:left;
+margin-right:5.747126436781609%;
+}
+.ie .three-columns #featuredposts {
+width:34.48275862068966%;
+float:left;
+padding-top:0;
+}
+.ie .three-columns #sidebar {
+width:24.59016393442623%;
+float:right;
+}
+.ie #featuredposts .post {
+margin: 0 0 32px;
+padding: 0;
+}
+.widget_woodojo_tabs img {
+	max-width: 60px;
+}
+
+/*WooSlider fix*/
+@media only screen and (max-width: 768px) {
+.wooslider .layout-text-left .slide-excerpt {
+float: left;
+width: 100%;
+}
+}
+
+/**
+ * Detail Nagging
+ */
+#error-message {
+	padding: 12px;
+	background-color: #c50e1f;
+	color: white;
+}
+
+#error-message a {
+	background-color: white;
+	padding: 3px;
+	border-radius: 2px;
+}
+
+/*title color slider and overlay background*/
+.slide-excerpt a, .entry-header h2.entry-title a:hover {color:black;}
+body .wooslider .overlay-full .slide-excerpt {background:white;}
+/*grid columns to 1 on tablets and below*/
+@media screen and (max-width: 800px) {
+.column-grid .column {
+float:none;
+margin-left:0;
+margin-right:0;
+width:auto;
+}
+}
+/*copied from wooDojo*/
+.sidebar .wp-cpl-theme-0 li { border: 0px solid #b9b9b9 !important;}
+.content #toc {list-style: none;margin-bottom: 20px;}
+#toc li {background: url(http://medonline.at/wp-content/uploads/dot.gif) repeat-x bottom left;overflow: hidden;padding-bottom: 2px;}
+#toc a,
+#toc span {display: inline-block;background: #fff;position: relative;bottom: -4px;
+}
+#toc a {float: right;padding: 0 0 3px 2px;}
+#toc span {float: left;padding: 0 2px 3px 0;}
+.quelle {font-size: .8em;line-height: 1em;margin-left:2px;}
+.post {padding-bottom: 0px !important}
+.wooslider .video-player, .wooslider .video-player object, body .wooslider.wooslider-type-slides img, .wooslider .video-player .videopress-placeholder {max-width: 100%; height: auto !important;}
+.login_error {z-index:5}
+.wp-cpl-read-more {text-decoration:underline}
+.gallery-item img {width:auto;}
+/*change header padding*/
+#branding {
+	padding-top: 40px!important;
+	padding-bottom: 30px!important;
+}
+
+/************* New homepage - incl. FACHBEREICHE **************/
+ol.display-posts-listing, ul.display-posts-listing {
+	list-style: none outside none;
+}
+/* Frank St./ 10.03.2014 - display posts shortcode plugin: break after date */
+.excerpt-dash {
+	display: block;
+	height: 0;
+	margin-left: 4000px;
+}
+
+/* Frank St./ 10.03.2014 - Whistles and Zozo Tabs in Fachbereiche */
+.page #content ul.z-tabs-nav {
+	margin: 0 0 30px 0;
+}
+.display-posts-listing li.listing-item:not(.one-half):not(.one-third) {
+	clear:both;
+	overflow: hidden;
+}
+.page #content ul.display-posts-listing,
+.page #content ol.display-posts-listing {
+	margin-left: 0;
+	list-style: none;
+}
+div.z-content-inner > p { margin:0; }
+/*div.z-content-inner*/ span.date { 
+	font-size: 70%;
+	color: #909090;
+	margin: 0 0.5em;
+}
+div.z-tabs.flat.mobile .z-dropdown-arrow {
+	margin-top:-9px;
+}
+.whistles-edit-link {
+	clear:both;
+}
+
+/* Frank St./ 10.03.2014 - Display Posts Shortcode plugin: separate li's */
+ul.display-posts-listing span.excerpt {
+	display: block;
+	padding: 0 0 5px;
+}
+ul.display-posts-listing span.excerpt p {
+	font-size: 1em;
+}
+ul.display-posts-listing > li.listing-item { 
+	padding: 5px 0;
+	border-top: 1px solid #ECECEC;
+}
+ul.display-posts-listing > li.listing-item.one-half { 
+	padding: 5px 7px;
+}
+/* Frank St./ 13.03.2014 - Tags of Display Posts Shortcode Items */
+span.dpshortcode-tags a {
+	background-color: #eee;
+	padding: 1px 7px;
+}
+span.tag-dash { display: none; }
+span.dpshortcode-tags {
+	display: block;
+	float: right;
+	margin-left: 2em;
+}
+
+.one-half span.dpshortcode-tags,
+.one-third span.dpshortcode-tags {
+	float: none;
+	margin-left: 0;
+}
+
+/* Frank St./ 11.03.2014 - Titles of Display Posts Shortcode Items */
+.display-posts-listing li a.title {
+	color: #2C3E50;
+	font-size: 130%;
+	font-family: Oswald;
+}
+.display-posts-listing li a.title:hover { color: #1289BA; }
+/* Frank, 15.04.2014: Display Posts in 3 Columns: */
+.column-grid-3 .display-posts-listing li a.title {
+	font-size: 120%;
+	line-height: 1.5;
+	display: block;
+	width: 275px;
+}
+
+/* Frank 26.03.2014 - Display Posts Shortcode in sidebars */
+#sidebar .display-posts-listing ol,
+#sidebar .display-posts-listing ul {
+	display: table-row;
+}
+#sidebar .display-posts-listing li a.title {
+	font-size: 0.9em;
+	text-decoration: none;
+}
+#sidebar .display-posts-listing li {
+	line-height: 1.35em;
+	padding: 0 5px;
+}
+/* Alternate White Grey Posts */
+#sidebar .display-posts-listing li:nth-child(even) {
+	background-color: #FFFFFF;
+}
+#sidebar .display-posts-listing li:nth-child(odd) {
+	background-color: #EAEAEA;
+}
+/* Thumb borders like the ones of WP Category List for consistent appearance */
+#sidebar .display-posts-listing img.wp-post-image {
+	background-color: #FFFFFF;
+	margin: 6px 10px 6px 5px;
+	padding: 3px;
+	width: 75px;
+}
+
+/* Frank St./ 12.03.2014 - Gradient: Fachbereiche, Tab: Anästhesie */
+div.gradient .display-posts-listing li {
+	display: table-row;
+	background-color:#fff;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fff, endColorstr=#ccc);
+	background-image:-moz-linear-gradient(top, #fff 25%, #ccc 100%);
+	background-image:-webkit-linear-gradient(top, #fff 25%, #ccc 100%);
+	background-image:-ms-linear-gradient(top, #fff 25%, #ccc 100%);
+	background-image:linear-gradient(top, #fff 25%, #ccc 100%);
+	background-image:-o-linear-gradient(top, #fff 25%, #ccc 100%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(25%,#fff), color-stop(100%,#ccc));
+}
+
+/* Testing Classes for Simon - BEGIN (Columns for Display Posts Shortcode) */
+.five-sixths,
+.four-fifths,
+.four-sixths,
+.one-fifth,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fifths,
+.three-fourths,
+.three-sixths,
+.two-fifths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+float: left;
+margin: 0 0 20px;
+padding-left: 3%;
+}
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 97%;
+}
+.first {
+	clear: both;
+	padding-left: 0;
+}
+/* Testing classes for Simon - END */
+
+/* Frank St./ 10.03.2014 - Scale pic's */
+@media screen and (min-width: 768px) {
+	ul.display-posts-listing img.wp-post-image {
+		width: 150px;
+		border: 1px solid #E5E5E5;
+		background-color: #FFFFFF;
+		padding: 5px;
+	}
+	ul.display-posts-listing span.excerpt {
+		padding: 0 0 5px 178px;
+	}
+	ul.display-posts-listing li.one-half span.excerpt,
+	ul.display-posts-listing li.one-third span.excerpt {
+		padding: 0 0 5px 5px;
+	}
+	/* Testing: Column classes for Display Posts Shortcode */
+	.one-half,
+	.three-sixths,
+	.two-fourths {
+		width: 48%;
+	}
+	.one-third,
+	.two-sixths {
+		width: 31%;
+	}
+	.four-sixths,
+	.two-thirds {
+		width: 65%;
+	}
+	.one-fourth {
+		width: 22.5%;
+	}
+	.three-fourths {
+		width: 73.5%;
+	}
+	.one-fifth {
+		width: 17.4%;
+	}
+	.two-fifths {
+		width: 37.8%;
+	}
+	.three-fifths {
+		width: 58.2%;
+	}
+	.four-fifths {
+		width: 78.6%;
+	}
+	.one-sixth {
+		width: 14%;
+	}
+	.five-sixths {
+		width: 82%;
+	}
+	/* Testing end */
+}
+
+/* Frank on 04/07/2014: Single "Display Posts" in columns (Simon)*/
+.column ul.display-posts-listing span.excerpt {
+	padding: 0 0 5px 0;
+}
+.column-grid-3 ul.display-posts-listing img {
+	width: 260px;
+}
+/*Frank, maybe for later, Grid Columns plugin does not provide responsive CSS:
+.column {
+	width: 100%; margin: 0; padding: 0;
+}*/
+
+/* Frank, 17.04.2014: Solve Waipoua conflict with display posts shortcode */
+.post ul.display-posts-listing, .page #content ul.display-posts-listing {
+	margin-bottom: 0;
+}
+
+/* Frank, 29.04.2014: Responsive Column Grids, requested by Simon */
+@media screen and (max-width: 800px) {
+	div.column-grid .column {
+		float:none;
+		margin-left:0;
+		margin-right:0;
+		width:auto;
+	}
+}
+
+/* Video Gallery's "fullwidth" definition overrides the theme class otherwise */
+#content.fullwidth {
+	width: inherit;
+}
+
+/* styling for decent comments plugin*/
+.comment-avatar {float:left;margin-right:8px;padding-right:0px!important;padding-top:5px;}
+.comment-excerpt {font-style:italic}

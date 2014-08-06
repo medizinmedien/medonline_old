@@ -1,0 +1,273 @@
+/* 
+Styles for disabling other stuff.
+Everything here is very !important!
+*/
+.header-widget-area { display:none!important; }
+/*	#footer #site-info .footer-nav ul li:first-child { display:list-item!important; }
+#footer #site-info .footer-nav ul li { display:none!important; }*/
+#site-info .footer-nav ul.menu li:after { display:none; content:""; }
+#nav { height:0; overflow:hidden; }
+#site-nav-open { display:none; }
+.logout { position: absolute; right: 40px; top: 40px; }
+
+/* Global Styles - maybe apply to all other Pages too???
+********************************************************/
+body, #header, #footer { background:#ECECEC; }
+/*body, #header { background:#F6F6F6; }*/
+.three-columns #wrap2, .three-columns #site-nav-container {
+	background:white;
+}
+#branding { padding:40px 0; }
+#site-title { float:none; width:567px; max-width:100%; margin:0 auto; }
+
+/* Styles for this page */
+
+
+
+/* Top 8 Link Boxes
+*******************/
+
+.hue-start-linkbox-container {
+	overflow:hidden;
+}
+
+.hue-start-linkbox {
+	position:relative;
+	margin-bottom:10px;
+}
+
+.hue-start-linkbox a {
+	display:block;
+	background:#d0d0cf;
+	color:#515151;
+	border-radius: 3px;
+}
+
+.hue-start-linkbox a:hover {
+	background:#C50E1F;
+	color:white;
+}
+
+.hue-start-linkbox a span {
+	font-family:Verdana;
+	font-weight:bold;
+	letter-spacing:2px;
+	display:block;
+	position: relative;
+	text-align:center;
+	padding:10px 0;
+}
+
+
+/* The Tabs
+***********/
+.hue-start-tabbox {
+	overflow: hidden;
+	margin-top:70px;
+}
+
+.hue-start-tabbox .tab-container {
+	display:none;
+}
+
+.hue-start-tabbox .tab-container .tab {
+	font-weight:bold;
+	background:#f1f1f1;
+	color:#515151;
+	padding:20px;
+	margin-bottom:10px;
+	letter-spacing:1px;
+}
+
+.hue-start-tabbox .tab-container .tab:first-child {
+
+}
+
+.hue-start-tabbox .tab-container .tab.current {
+	background:#c50e1f;
+	color:white;
+}
+
+.hue-start-tabbox .tab-container .tab:hover {
+	background:#c50e1f;
+	color:white;
+	cursor:pointer;
+}
+
+/* Content of the Articles in the Tabbox */
+.article-container {
+	padding-left:20px;
+/*		border-top:1px solid #909090;
+	border-right:1px solid #909090;
+	border-bottom:1px solid #909090;*/
+	/*background:#909090;*/
+}
+
+/* Tabs inside Tabs - the Pagination for the article-containers */
+.article-container .pagination { text-align: center; }
+
+.article-container .pagination a {
+	padding: 5px 10px;
+	background: #c50e1f;
+	color: #FFF;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.article-container .pagination a.current {
+	background:#909090;
+}
+
+.post {
+	/*margin:0!important;*/
+	margin-bottom:10px;
+	padding:30px!important;
+	overflow:hidden;
+	background:white;
+	border-bottom:0;
+}
+
+.post:hover {
+/*		background:#fafafa;
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);*/
+}
+
+.post:first-child {
+	/*border-top: 1px solid #ECECEC;*/
+}
+
+.post ul {
+	margin:0!important;
+	overflow:hidden;
+}
+
+.entry-header { padding:0; }
+.entry-header h2.entry-title {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+.entry-details ul li a {
+	font-size:0.5em;
+}
+
+.entry-content {
+	position:relative;
+	overflow:hidden;
+	padding-bottom:10px!important;
+}
+
+.entry-content p {
+	font-size:1.0em;
+	line-height:1.7;
+	margin-bottom:8px;
+}
+
+/*.entry-content p a { display:none; }*/
+
+.hue-start-tabbox img.wp-post-image { width:75px; margin: 5px 11px 3px 0; padding:5px; border:1px solid #ccc;}
+
+.read-more { float:left; }
+.categories { float:right; text-align: right; font-size:0.7em; margin-top:5px; }
+
+/* END TABBOX
+*************/
+
+/* BEGIN WP-SYMPOSIUM-STREAM
+****************************/
+.hue-wps-stream { max-width:660px; margin:0 auto; }
+
+.__wps__wrapper { padding:30px!important; }
+
+/* button style */
+.__wps__wrapper .__wps__button, .__wps__button, .__wps__wrapper .__wps__btn, .__wps__btn {
+	background-color:#D0D0CF!important;
+}
+
+.__wps__wrapper .__wps__button:hover, .__wps__button:hover, .__wps__wrapper .__wps__btn:hover, .__wps__btn:hover {
+	background-color:#c50e1f!important;
+	-webkit-box-shadow:0 0 0!important;
+	-moz-box-shadow:0 0 0!important;
+	box-shadow:0 0 0!important;
+	color:white!important;
+}
+
+/* input boxes */
+.__wps__wrapper #__wps__comment, .__wps__wrapper .__wps__reply {
+	background:white!important;
+	padding:0 3px 3px 3px!important;
+	box-shadow:0 0 0!important;
+}
+
+
+/* sidebar part */
+.three-columns #sidebar { width:100%!important; margin-top:50px; padding:20px 0;}
+#sidebar .widget { margin: 20px 0; }
+/*.widget:first-child { margin-left:0!important; }*/
+.entry-details ul li { margin-right:10px; }
+
+/* experiment: IE8 compat */
+
+/* experiment: IE8 compat  END*/
+
+@media screen and (min-width: 480px) {
+	.hue-start-linkbox {
+		width:49.4%;
+		float:left;
+		margin:0.3%;
+	}
+	.hue-start-linkbox a span { font-size:16px; }
+}
+
+@media screen and (min-width: 768px) {
+	.hue-start-tabbox .tab-container {
+		width:235px;
+		float:left;
+		display:block;
+	}
+	.hue-start-tabbox .tab-content {
+		margin-left:235px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 100%;
+	}
+	.hue-start-linkbox {
+		width:24.4%;
+		height:100px;
+	}
+	.hue-start-linkbox a {
+		position:absolute;
+		top:0;
+		height:100%;
+		left:0;
+		width:100%;
+	}
+	.hue-start-linkbox a span {
+		top:50%;
+		margin-top:-27px;
+		padding:10px;
+		/*width:100%;*/
+	}
+	.hue-start-tabbox img.wp-post-image { width:125px; }
+	#sidebar .widget { width: 29.333%; position: relative; float: left; margin:20px 2%; padding:0;}
+}
+@media screen and (min-width: 1170px) {
+	.hue-start-linkbox {
+		width:24.4%;
+		height:150px;
+	}
+	.hue-start-linkbox a span {
+		font-size:25px;
+	}
+	.entry-content > .content-post { 
+		margin-left:135px;
+	}
+}
+@media screen and (min-width: 1280px) { }
+
+.__wps__wrapper #symposium_add_status { height:170px; } /* IE FIX */
