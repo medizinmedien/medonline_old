@@ -5,7 +5,7 @@ Description: Anpassungen des Waipoua Themes
 Author: Thomas N. Burg
 Author URI: http://www.medonline.at/
 Template: waipoua
-Version: 1.1
+Version: 1.2
 Tags: Waipoua Child Theme Medonline Old
 GitHub Theme URI: https://github.com/medizinmedien/medonline_old
 */
@@ -445,3 +445,9 @@ padding-left: 3%;
 /* styling for decent comments plugin*/
 .comment-avatar {float:left;margin-right:8px;padding-right:0px!important;padding-top:5px;}
 .comment-excerpt {font-style:italic}
+
+/* Correct shown decimal in FF */
+#wrap2 #footer #site-info .footer-nav ul li {
+	list-style-type: none;
+}
+
