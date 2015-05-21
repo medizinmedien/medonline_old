@@ -46,7 +46,7 @@
 <?php // Includes Twitter, Facebook and Google+ button code if the share post option is active.
     $options = get_option('waipoua_theme_options');
     if($options['share-singleposts'] or $options['share-posts'] or $options['share-pages']) : ?>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
     <script type="text/javascript">
     (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
